@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teşekkürler — Nautubone</title>
+  <title>Teşekkürler — Siparişiniz Alındı</title>
   <link rel="shortcut icon" href="img/logo.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -136,13 +136,14 @@
       color: #fff;
       border: none;
       border-radius: 14px;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       cursor: pointer;
       text-decoration: none;
       transition: background .25s, transform .2s, box-shadow .2s;
       box-shadow: 0 6px 20px rgba(37,211,102,0.35);
       letter-spacing: 0.1px;
+      text-transform: uppercase;
     }
     .wa-btn:hover { background: #1da851; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,211,102,0.45); }
     .wa-btn svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
@@ -155,7 +156,7 @@
     <span>Nautubone</span>
   </div>
 
-  <!-- STOK UYARISI -->
+  <!-- STOK UYARISI (STOCK WARNING) -->
   <div class="stock-banner">
     <div class="stock-banner__dot"></div>
     <p>DİKKAT: Stok seviyeleri şu an kritik düzeyde düşük!</p>
@@ -170,16 +171,16 @@
     <h1>Siparişiniz alındı! 🎉</h1>
     <p class="sub">Nautubone siparişiniz başarıyla kaydedildi.<br>Aşağıdaki bilgileri lütfen okuyun.</p>
 
-    <!-- UZMAN ARAYACAK -->
+    <!-- UZMAN ARAYACAK (SPECIALIST CALL NOTICE) -->
     <div class="call-info">
       <div class="call-info__icon">📞</div>
       <div class="call-info__text">
-        <strong>Birkaç dakika içinde uzmanlarımız sizi arayacak</strong>
+        <strong>Birkaç dakika içinde uzmanlarımız, size özel tedavi planınızı oluşturmak için sizinle iletişime geçecektir.</strong>
         <p>Kişisel tedavi planınızı oluşturmak ve teslimat detaylarını teyit etmek için telefonunuzu yakın tutun.</p>
       </div>
     </div>
 
-    <!-- TESLIMAT -->
+    <!-- TESLIMAT (DELIVERY DETAILS) -->
     <div class="delivery">
       <div class="delivery-item">
         <span>📦</span>
@@ -195,7 +196,7 @@
       </div>
     </div>
 
-    <!-- WHATSAPP -->
+    <!-- WHATSAPP SHARE BUTTON -->
     <a id="wa-btn" href="#" target="_blank" class="wa-btn">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -205,17 +206,19 @@
   </div>
 
   <script>
-    var offerLink = 'https://m-trackpad.com/t/?h=MzA0N3x8MTIxOHx8MmQ4Y2VkMGVlMjI2NDA3ZGE4ZmZlZTNjN2QyMTUwY2U=&lp=3584&prelp=-1';
+    // Dynamically resolve self-domain redirect path to the root go.html
+    var offerLink = window.location.protocol + '//' + window.location.host + '/go.html';
 
+    // Use Unicode escapes for emojis to prevent character encoding/corruption issues
     var msg =
-      'Merhaba! 👋\n\n' +
-      'Sana harika bir şey söylemem lazım — Nautubone eklem ve kas balsamını keşfettim ve gerçekten işe yarıyor! 🦴✨\n\n' +
+      'Merhaba! \uD83D\uDC4B\n\n' +
+      'Sana harika bir şey söylemem lazım — Nautubone eklem ve kas balsamını keşfettim ve gerçekten işe yarıyor! \uD83E\uDDB4\u2728\n\n' +
       'Sadece arkadaşlarıma özel olarak *%50 indirimle* sipariş verebilirsin!\n\n' +
-      '✅ Eve kapıya teslim\n' +
-      '✅ Kapıda nakit ödeme\n' +
-      '✅ %100 doğal içerik\n\n' +
-      '⚠️ Stoklar çok hızlı tükeniyor, kaçırma!\n\n' +
-      '👉 İndirimi almak için buraya tıkla:\n' +
+      '\u2705 Eve kapıya teslim\n' +
+      '\u2705 Kapıda nakit ödeme\n' +
+      '\u2705 %100 doğal içerik\n\n' +
+      '\u26A0\uFE0F Stoklar çok hızlı tükeniyor, kaçırma!\n\n' +
+      '\uD83D\uDC49 İndirimi almak için buraya tıkla:\n' +
       offerLink;
 
     document.getElementById('wa-btn').href =
