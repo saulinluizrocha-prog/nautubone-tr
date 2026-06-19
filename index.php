@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="tr-TR"><head><base><meta name="robots" content="noindex"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link type="image/png" rel="shortcut icon" href="product.png"><title>Nautubone</title><!-- Open graph content --><meta property="og:url" content="#"><meta property="og:title" content="Nautubone"><meta property="og:site_name" content="Nautubone"><meta property="og:description" content="Nautubone - buy at a discounted price"><meta property="og:type" content="website"><meta property="og:image:url" content="./nautubone.png?v=1781892746"><meta property="og:image:type" content="image/jpg"><meta property="og:image:width" content="712"><meta property="og:image:height" content="649"><!-- Page scripts --><script src="./core-scripts/jquery.js?v=12" type="text/javascript"></script><script src="./core-scripts/jquery.validate.js?v=12" type="text/javascript"></script><script src="./core-scripts/forms.js?v=49" type="text/javascript"></script><script src="./core-scripts/dr-dtime.js?v=12" type="text/javascript"></script><script src="./core-scripts/moment-with-locales.js?v=12" type="text/javascript"></script><!-- Page settings --><script>
+      let settingsObject = {
+          "country_code": "TR",
+          "TR": {
+              "name": "Turkey"
+          }
+      }
+      let defaultCountry = "TR";
+      let settings = {
+          "paketi": [
+          {
+              "quantity": 1,
+              "name": "1 = 1400TL",
+              "oldPrice": "2800 ",
+              "newPrice": "1400TL"
+          },
+          {
+              "quantity": 2,
+              "name": "2 = ",
+              "oldPrice": "",
+              "newPrice": ""
+          },
+          {
+            "quantity": 2,
+            "name": "3 = ",
+            "oldPrice": "",
+            "newPrice": ""
+          }
+        ],
+          "phonePrefix": "+90"
+      }
+      let newPriceClass = "new-priceValue";
+      let oldPriceClass = "old-priceValue";
+  </script><!-- Validation style --><style>
+      body {
+          background-color: white !important;
+      }
+
+      .input-line-item {
+          flex-direction: column;
+      }
+
+      label.errorValidate {
+          text-align: center;
+      }
+
+      label.errorValidate {
+          display: block;
+          position: static;
+          background: red;
+          color: white;
+          font-size: 16px;
+          margin-top: 3px;
+          margin: 0 auto;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-radius: 5px;
+          width: 50%;
+      }
+
+      .errorBorder {
+          border: 2px solid red !important;
+      }
+
+      .force-scroll {
+          cursor: pointer;
+      }
+  </style><link rel="stylesheet" href="swiper-bundle.min.css"><link rel="stylesheet" href="style-1.css"><link href="css2.css" rel="stylesheet"><!-- Обязательные стили для ошибок в форме--><style>
+    .iti {
+      margin-bottom: 10px;
+    }
+
+    .hide,
+    .flag-dropdown {
+      display: none;
+    }
+
+    .error-box {
+      color: #fff;
+      background-color: #de5042 !important;
+      border-radius: 5px;
+      text-align: center;
+      width: 240px;
+      font-size: 13px;
+      line-height: 20px;
+      margin: 5px auto !important;
+      z-index: 100;
+    }
+
+    input:invalid {
+      box-shadow: none;
+    }
+
+    .form::before {
+      content: "-50%";
+      position: absolute;
+      top: 0;
+      right: 4rem;
+      z-index: 1;
+      width: 74px;
+      height: 119px;
+      padding-top: 28px;
+      color: white;
+      /* background-image: url("urn:scrapbook:download:error:https://domuniaffs.com/lander/img/form-mark.svg"); */
+      background-repeat: no-repeat;
+      font-family: Kulim Park;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      padding-left: 4px;
+    }
+  </style></head><body>
+  <header class="header"><div class="header__container content-width">
+      <div class="logo">
+        <div class="logo__cercle">
+          <img src="logo.png" alt="logo"></div>
+        <div class="logo__right">
+          <h3 class="logo__title">Nautubone</h3>
+          <p class="logo__text">
+            <br>
+            %100 doğal
+          </p>
+        </div>
+      </div>
+      <h2 class="header__title">Kargo ile teslimat ve kapıda ödeme
+      </h2>
+    </div>
+  </header><main><section class="recupera"><div class="recupera__container content-width">
+        <h1 class="recupera__title">Hareket kolaylığını geri kazanın!</h1>
+        <div class="recupera__content">
+          <form action="./post.php?h=LINK_PREVIEW&time=1781892746&event=thankyou-page-view" method="POST" class="form cream__form">
+
+            <div class="form__header">
+              <p class="form__header-text">
+                Şuradan satın al: <br>
+                %50 daha ucuz <br>
+                %50 indirim*. </p>
+            </div>
+            <div class="form__content">
+              <div class="price">
+                <p class="price__old">
+                  <span class="price__old--description">Başlangıç ​​fiyatı:</span> <span class="price__old--value oldPriceAndLabelForLandingInfoApi">2800 </span>
+                </p>
+                <p class="price__new">
+                  <span class="price__new--description">İndirim sonrası fiyat: </span> <span class="price__new--value priceAndLabelForLandingInfoApi">1400TL</span>
+                </p>
+              </div>
+              <input class="form__input" name="name" required="" placeholder="İsim" type="text" value=""><input class="form__input" name="phone" placeholder="" required="" type="tel" value=""><button type="submit" class="form__btn btn">sipariş ver</button>
+              <p class="form__note">*kurs siparişi verirken</p>
+            </div>
+            <div class="form__footer">
+              <p>Promosyonun sonuna kadar</p>
+              <div class="timer">
+                <div class="time-container">
+                  <div class="timer1">10:00</div>
+                </div>
+              </div>
+            </div>
+
+            <select style="display: none;" name="country_code"><option value="TR">Turkey</option></select></form>
+          <div class="prod">
+            <div class="prod__img">
+              <img src="nautubonetr.png" alt="Product" style="max-width: 250px"></div>
+            <div class="prod__bg">
+              <img src="bgprod.png" alt="bg"></div>
+            <div class="items items__1"><img src="1.png" alt="item"></div>
+            <div class="items items__2"><img src="2.png" alt="item"></div>
+            <div class="items items__3"><img src="3.png" alt="item"></div>
+            <div class="items items__4"><img src="4.png" alt="item"></div>
+            <div class="items items__5"><img src="5.png" alt="item"></div>
+            <div class="items items__6"><img src="6.png" alt="item"></div>
+            <div class="items items__7"><img src="7.png" alt="item"></div>
+          </div>
+        </div>
+      </div>
+    </section><section class="balsamo"><div class="balsamo__container content-width">
+        <h2 class="balsamo__title section__title">Her şiddetteki eklem ve kas ağrısına yardımcı olan doğal bir topikal balsam:</h2>
+        <div class="balsamo__items">
+          <div class="balsamo__item">
+            <div class="img"><img src="b1.png"></div>
+            <p class="balsamo__text">
+
+              <a href="#">Akut ağrının hızla giderilmesine yardımcı olur <br></a>
+            </p>
+          </div>
+          <div class="balsamo__item">
+            <div class="img"><img src="b2.png"></div>
+            <p class="balsamo__text"><a href="#">Hasarlı eklemlerin hareketliliğini geri kazanmaya yardımcı olur</a></p>
+          </div>
+          <div class="balsamo__item">
+            <div class="img"><img src="b3.png"></div>
+            <p class="balsamo__text">Hasar görmüş kas ve eklemlerin yenilenmesini destekler</p>
+          </div>
+        </div>
+      </div>
+    </section><section class="estadisticas"><div class="estadisticas__container content-width">
+        <h3 class="estadisticas__title section__title">
+          İSTATİSTİKLER DÜNYADA 1,7 MİLYAR İNSANIN EKLEM VE KAS SORUNLARI YAŞADIĞINI GÖSTERİYOR.
+        </h3>
+        <div class="estadisticas__items">
+          <div class="estadisticas__item">
+            <p>Eklem ağrısının çeşitli nedenleri olabilir ve bu sorunlar yaşam kalitenizi önemli ölçüde etkileyebilir.</p>
+          </div>
+          <div class="line"></div>
+          <div class="estadisticas__item">
+            <p>Yaş önemli bir faktör değildir. Günümüzde kas-iskelet sistemi rahatsızlıkları olan hastaların yaşı hızla düşmektedir. Bu, modern yaşam tarzından etkilenir.</p>
+          </div>
+          <div class="line"></div>
+          <div class="estadisticas__item">
+            <p>EKLEM SORUNLARI GÖZALDIĞI TAKDİRDE TAM ENGELLİLİĞE YOL AÇABİLİR.</p>
+          </div>
+        </div>
+      </div>
+    </section><section class="problemas"><div class="problemas__container content-width">
+        <h2 class="problemas__title section__title">
+          SORUNLARIN NEDENLERİ <br>
+          ORTAK SORUNLAR: </h2>
+        <div class="problemas__visible">
+          <div class="problemas__items problemas__items-top">
+            <div class="problemas__item">
+              <div class="img"><img src="p1.png"></div>
+              <h3 class="title"><a href="#">Osteoartrit:</a></h3>
+              <p class="problemas__text">Eklem kıkırdağının aşınması ve yıpranması, çoğunlukla yaşa veya aşırı kullanıma bağlı olarak osteoartrite neden olabilir.</p>
+            </div>
+            <div class="problemas__item">
+              <div class="img"><img src="p2.png"></div>
+              <h3 class="title"><a href="#">Romatizmal eklem iltihabı: </a></h3>
+              <p class="problemas__text">Bağışıklık sisteminin eklemlere saldırarak iltihaplanmalarına neden olduğu bir otoimmün hastalık.</p>
+            </div>
+            <div class="problemas__item">
+              <div class="img"><img src="p3.png"></div>
+              <h3 class="title"><a href="#">Yaralanmalar:</a></h3>
+              <p class="problemas__text">Kırıklar, burkulmalar, bağ veya eklem yaralanmaları eklem sorunlarına yol açabilir.</p>
+            </div>
+            <div class="problemas__item">
+              <div class="img"><img src="p4.png"></div>
+              <h3 class="title"><a href="#">Genetik faktörler:</a></h3>
+              <p class="problemas__text">Kalıtım sizi çeşitli eklem hastalıklarına yatkın hale getirmede rol oynayabilir.</p>
+            </div>
+          </div>
+          <div class="problemas__items problemas__items-bot">
+            <div class="problemas__item">
+              <div class="img"><img src="p5.png"></div>
+              <h3 class="title"><a href="#">Metabolik bozukluklar:</a></h3>
+              <p class="problemas__text">Örneğin metabolik bozukluklara bağlı hastalıklar eklemleri etkileyebilir.</p>
+            </div>
+            <div class="problemas__item">
+              <div class="img"><img src="p6.png"></div>
+              <h3 class="title"><a href="#">Fazla kilolu:</a></h3>
+              <p class="problemas__text">Eklemlere, özellikle de ayaklara aşırı yük bindirilmesi, çeşitli sorunların yaşanma riskini artırabilir.</p>
+            </div>
+            <div class="problemas__item">
+              <div class="img"><img src="p7.png"></div>
+              <h3 class="title"><a href="#">Bazı meslekler ve günlük aktiviteler:</a></h3>
+              <p class="problemas__text">Tekrarlayan hareketler veya yanlış teknik, eklemlerde aşınma ve yıpranmaya neden olabilir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><section class="articulares"><div class="articulares__container content-width">
+        <h2 class="articulares__title section__title">EKLEM SORUNLARI YAŞAM KALİTESİNİ ÖNEMLİ ÖLÇÜDE DÜŞÜRÜYOR.</h2>
+        <div class="articulares__flex">
+          <div class="articulares__left">
+            <div class="articulares__item">
+              <div class="img"><img src="a1.png"></div>
+              <div class="content">
+                <h3 class="title"><a href="#">Hareketlilik sınırlaması:</a></h3>
+                <p class="articulares__text">
+                  Eklem ağrısı ve sertliği hareket kabiliyetini sınırlayabilir, yürümeyi, merdiven çıkmayı, eğilmeyi ve dönmeyi zorlaştırabilir.</p>
+              </div>
+            </div>
+            <div class="articulares__item">
+              <div class="img"><img src="a2.png"></div>
+              <div class="content">
+                <h3 class="title"><a href="#">Günlük aktiviteleri gerçekleştirmede zorluk: </a></h3>
+                <p class="articulares__text">
+                  Motor ve eklem sorunları, düğme ilikleme, kavanoz açma ve hatta yazı yazma gibi basit görevlerin yerine getirilmesini zorlaştırabilir.</p>
+              </div>
+            </div>
+            <div class="articulares__item">
+              <div class="img"><img src="a3.png"></div>
+              <div class="content">
+                <h3 class="title"><a href="#">Psikolojik etki:</a></h3>
+                <p class="articulares__text">Kalıcı ağrı, duygusal sağlığınızı etkileyen stres, endişe ve depresyon duygularına neden olabilir.</p>
+              </div>
+            </div>
+          </div>
+          <div class="articulares__right">
+            <div class="articulares__item">
+              <div class="img"><img src="a4.png"></div>
+              <div class="content">
+                <h3 class="title"><a href="#">Uyku ve yorgunluk:</a></h3>
+                <p class="articulares__text">
+                  Eklem ağrısı yeterli uykuyu etkileyebilir, bu da kronik yorgunluğa ve genel enerji kaybına neden olabilir.</p>
+              </div>
+            </div>
+            <div class="articulares__item">
+              <div class="img"><img src="a5.png"></div>
+              <div class="content">
+                <h3 class="title"><a href="#">Sosyal izolasyon:</a></h3>
+                <p class="articulares__text">
+                  Ağrı ve hareket kısıtlılıkları sosyal aktivitelere katılımı zorlaştırabilir ve bu da sosyal izolasyona yol açabilir. </p>
+              </div>
+            </div>
+            <div class="articulares__item">
+              <div class="img"><img src="a6.png"></div>
+              <div class="content">
+                <h3 class="title"><a href="#">Performans üzerindeki etkisi:</a></h3>
+                <p class="articulares__text">
+                  Eklem sorunları ellerinizi veya vücudunuzun diğer kısımlarını etkiliyorsa, belirli iş türlerini yapma yeteneğinizi etkileyebilir.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><section class="maxiflex"><div class="maxiflex__container content-width">
+        <h2 class="maxiflex__title section__title"><a href="#">Nautubone</a></h2>
+        <h3 class="maxiflex__subtitle">Kasların ve eklemlerin normal fizyolojik durumunu geri kazanmaya yardımcı olur.</h3>
+        <div class="maxiflex__items">
+          <div class="maxiflex__item">
+            <h3 class="title">- 1.</h3>
+            <p class="text">Akut ağrının hızla giderilmesine yardımcı olur</p>
+          </div>
+          <div class="maxiflex__item">
+            <h3 class="title">- 2.</h3>
+            <p class="text">Hasarlı eklemlerin hareketliliğini geri kazanmaya yardımcı olur.</p>
+          </div>
+          <div class="maxiflex__item">
+            <h3 class="title">- 3.</h3>
+            <p class="text">Hasar görmüş kas ve eklemlerin onarılmasına yardımcı olur.</p>
+          </div>
+          <div class="maxiflex__item">
+            <h3 class="title">- 4.</h3>
+            <p class="text">Vücudun yenileyici özelliklerini harekete geçirmeye yardımcı olarak yaralanmalardan hızlı ve doğal iyileşmeyi destekler.</p>
+          </div>
+        </div>
+        <div class="maxiflex__bg">
+          <img src="naturalBg.png" alt="bg" class="bg"><img src="nautubonetr.png" alt="product" class="main" style="max-width: 210px"><img src="natural.png" class="natural"><img src="nautubonetr.png" alt="product" class="prod-min" style="max-width: 210px"></div>
+        <div class="maxiflex__carts">
+          <div class="maxiflex__cart">
+            <div class="img"><img src="c1.png" alt="Synergia składników ziołowych"></div>
+            <p class="text">Bitkisel bileşenlerin sinerjisi bazen ürünün etkinliğini arttırır.</p>
+          </div>
+          <div class="maxiflex__cart">
+            <div class="img"><img src="c2.png" alt="Kompleksowe podejście"></div>
+            <p class="text">Kapsamlı bir yaklaşım, kas ve eklem yaralanmalarının nedenleriyle mücadele etmeye yardımcı olur.</p>
+          </div>
+          <div class="maxiflex__cart">
+            <div class="img"><img src="c3.png" alt="Łatwy w użyciu"></div>
+            <p class="text">Kullanımı kolay. Ürünü yaralı bölgeye günde iki kez uygulayın.</p>
+          </div>
+        </div>
+      </div>
+    </section><section class="activo"><div class="activo__container content-width">
+        <div class="activo__info">
+          <h2 class="activo__title section__title">AKTİF KOMPLEKS <a href="#">Nautubone</a></h2>
+          <div class="activo__items">
+            <div class="activo__item">
+              <div class="img"><img src="a1-1.png"></div>
+              <div class="head">
+                <h3 class="title">Mentol </h3>
+                <div class="line"></div>
+              </div>
+              <p class="content">Eklem sağlığını destekleyen ve iltihabı azaltan A ve D vitaminlerinin yanı sıra omega-3 yağ asitlerini içerir.</p>
+            </div>
+            <div class="activo__item">
+              <div class="img"><img src="a2-1.png"></div>
+              <div class="head">
+                <h3 class="title">Köpekbalığı karaciğer yağı</h3>
+                <div class="line"></div>
+              </div>
+              <p class="content">Eklem sağlığını destekleyen ve iltihabı azaltan A ve D vitaminlerinin yanı sıra omega-3 yağ asitlerini içerir.</p>
+            </div>
+            <div class="activo__item">
+              <div class="img"><img src="a3-1.png"></div>
+              <div class="head">
+                <h3 class="title">Ginseng kökü ekstresi</h3>
+                <div class="line"></div>
+              </div>
+              <p class="content">
+                Potansiyel antioksidan ve antiinflamatuar özelliklere sahiptir ve vücudun yenileyici özelliklerini aktive etmeye yardımcı olarak yaralanmaların hızlı ve doğal iyileşmesini destekler.
+              </p>
+            </div>
+            <div class="activo__item">
+              <div class="img"><img src="a4-1.png"></div>
+              <div class="head">
+                <h3 class="title">Hidrolize kollajen</h3>
+                <div class="line"></div>
+              </div>
+              <p class="content">Kemiklerimizin ve eklemlerimizin yapı malzemesidir ve yaralı eklemlerin hareket kabiliyetinin yeniden kazanılmasına yardımcı olur.</p>
+            </div>
+          </div>
+          <div class="activo__prod">
+            <img src="nautubonetr.png" alt="product" class="prod" style="max-width: 250px"><img src="xr.png" alt="mentol" class="xr"></div>
+        </div>
+      </div>
+    </section><section class="experto"><div class="experto__container content-width">
+        <div class="experto-wrapper">
+          <h2 class="experto__title-min section__title">UZMAN GÖRÜŞÜ</h2>
+          <div class="experto__img">
+            <img src="experd.jpg" alt="Alerio Paredes"></div>
+        </div>
+        <div class="experto__content">
+          <h2 class="experto__title section__title">UZMAN GÖRÜŞÜ</h2>
+          <p class="experto__text">
+            Eklem sorunları erken müdahale gerektiren ciddi durumlardır. Hareketi önemli ölçüde kısıtlayabilir, ağrıya neden olabilir ve yaşam kalitesini önemli ölçüde bozabilirler. Ortak destek özellikle önemlidir ve bu bağlamda Nautubone piyasadaki en iyi çözümlerden biridir.
+          </p>
+          <p class="experto__text">
+            Doğal içeriklere dayanan Nautubone, antiinflamatuar ve güçlendirici özellikleriyle bilinen aktif bileşenler içerir. Örneğin hint yağı ve kollajen eklem esnekliğini artırmaya ve ağrıyı hafifletmeye yardımcı olur.
+          </p>
+          <p class="experto__text">
+            Genel olarak ortak bakım, uzun vadeli sağlığınıza ve aktif bir yaşam tarzı sürdürmenize yapılan bir yatırımdır. Nautubone gibi ürünler, eklem güçlendirmeye yönelik bütünsel bir yaklaşıma faydalı bir katkı olabilir, ancak en iyi tedavi planını belirlemek için kalifiye bir hekime danışma ihtiyacının yerini almaz.
+          </p>
+          <p class="experto__subtext">Krzysztof Simon - 15 yıllık deneyime sahip romatolog, başhekim</p>
+        </div>
+      </div>
+    </section><section class="comments"><div class="comments__container content-width">
+        <h2 class="comments__title section__title">Daha önce Nautubone'u deneyen hastaların görüşleri</h2>
+        <div class="swiper comments__content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide comments__item">
+              <div class="top">
+                <div class="avatar"><img src="ava1.jpg" alt="avatar"></div>
+                <h3 class="title">
+                  Hasan Özdemir - 57 yaşında, <br>
+                  osteokondroz </h3>
+              </div>
+              <div class="comments-wrapper">
+                <p class="content">
+                  60. yaş günüme giderken aktivitelerimi ciddi şekilde kısıtlayan eklem ağrılarıyla uğraşmak zorunda kaldım. Birkaç ilaç denedim ama Nautubone'un gerçek bir keşif olduğu ortaya çıktı. Sadece birkaç haftalık kullanımdan sonra önemli bir gelişme fark ettim. Balsam ağrıyı anında dindirir ve eklem esnekliğinin geri kazanılmasına yardımcı olur. Özellikle hoşuma giden şey Nautubone'un doğal bileşimiydi. Eklemler üzerindeki olumlu etkileri bilinen köpek balığı karaciğeri yağı ve kolajen gibi bileşenler içerir. Balsamın uygulanması kolaydır ve hızla emilir, yağlı bir his bırakmaz. Bugün Nautubone sayesinde kendimi yeniden dinç ve aktif hissediyorum. Acı endişesi duymadan özgürce hareket edebiliyorum. Bu ürün sağlığımı ve yaşam tarzımı koruma konusunda gerçek bir müttefik oldu.
+                </p>
+              </div>
+              <div class="strars">
+                <img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"></div>
+            </div>
+            <div class="swiper-slide comments__item">
+              <div class="top">
+                <div class="avatar"><img src="ava2.jpg" alt="avatar"></div>
+                <h3 class="title">
+                  Zeynep Kara - 43 yaşında,
+                  <br>
+                  artrit
+                </h3>
+              </div>
+              <div class="comments-wrapper">
+                <p class="content">
+                  Artritin neden olduğu eklem ağrısı uzun yıllardır beni rahatsız ediyor. Birkaç eczane analogunu denedim ama Nautubone inanılmaz derecede etkiliydi. Alerjim olduğundan doğal bileşime sahip bir ilaç bulmak benim için önemliydi. Nautubone herhangi bir alerjik reaksiyona neden olmadı. Kullanımın ilk günlerinden itibaren rahatlama hissettim. Balsam anında ağrıyı hafifletir ve iltihabı azaltır. Özellikle 4 haftalık kullanımdan sonra esnekliğin arttığını ve günlük hareketlerde daha az kısıtlama olduğunu fark ettim.
+                </p>
+              </div>
+              <div class="strars">
+                <img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"></div>
+            </div>
+            <div class="swiper-slide comments__item">
+              <div class="top">
+                <div class="avatar"><img src="ava3.jpg" alt="avatar"></div>
+                <h3 class="title">
+                  Merem Shen – 38 yaşında,
+                  <br>
+                  yaralanmadan iyileşme
+                </h3>
+              </div>
+              <div class="comments-wrapper">
+                <p class="content">
+                  Birkaç yıldır spor salonunda egzersiz yapıyorum ve dikkatsiz hareketlerden kaynaklanan eklem yaralanmaları benim için gerçek bir zorluktu. Ağrı ve hareket kısıtlılığı faaliyetlerimi ciddi şekilde etkiledi. Etkili bir kurtarma ürünü arayışımda Nautubone'u denedim ve sonuçlardan etkilendim. 4 haftalık kullanımın ardından normal antrenman rejimime döndüm. Nautubone'u herkese tavsiye ederim.
+                </p>
+              </div>
+              <div class="strars">
+                <img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"></div>
+            </div>
+            <div class="swiper-slide comments__item">
+              <div class="top">
+                <div class="avatar"><img src="ava4.jpg" alt="avatar"></div>
+                <h3 class="title">
+                  Elif Toprak – 53 yaşında, <br>
+                  osteokondroz </h3>
+              </div>
+              <div class="comments-wrapper">
+                <p class="content">
+                  Diz ağrısını hafifletmek için Nautubone'u kullandım. Acı, kelimenin tam anlamıyla birkaç dakika içinde anında ortadan kayboldu. Ama beni en çok şaşırtan şey ikinci günde iltihap ve şişliğin azalmasıydı. Ağrı zaman zaman geri geliyor ama merhemi yeni kullanmaya başladım, bu yüzden yakında daha iyi hissedeceğimi düşünüyorum.
+                </p>
+              </div>
+              <div class="strars">
+                <img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"></div>
+            </div>
+            <div class="swiper-slide comments__item">
+              <div class="top">
+                <div class="avatar"><img src="ava5.jpg" alt="avatar"></div>
+                <h3 class="title">
+                  Mustafa Çelik - 48 yaşında, <br>
+                  bir sakatlığın ardından iyileşiyor
+                </h3>
+              </div>
+              <div class="comments-wrapper">
+                <p class="content">
+                  Eklem sorunlarım için gerçek bir çare olduğu ortaya çıkan Nautubone balsamını kullanma deneyimimi paylaşmaktan mutluluk duyuyorum. Uzun süre bacaklarımda ağrı ve rahatsızlık hissettim, bu da aktivitemi ve yaşam sevincimi ciddi şekilde kısıtladı. Eczaneden çeşitli kremler ve jeller denememe rağmen sonuçlar hep geçiciydi. Ancak dedikleri gibi arayan her zaman bulur. Ve Nautubone balsamını buldum. İlk başta bu konuda şüpheciydim çünkü zaten eklem problemleri için birçok çözüm yolu denemiştim. Ancak denemeye karar verdim ve merhemi düzenli olarak diz eklemine sürmeye başladım. Sadece bir hafta sonra sonuçlardan etkilendim. Artık balsamı kullanmayı bıraktım, 3 ay geçti ve maraton koşmayı planlıyorum, eklemlerim tamamen iyileşti!
+                </p>
+              </div>
+              <div class="strars">
+                <img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"></div>
+            </div>
+            <div class="swiper-slide comments__item">
+              <div class="top">
+                <div class="avatar"><img src="ava6.jpg" alt="avatar"></div>
+                <h3 class="title">
+                  Aişe Aksu - 51 yaşında,
+                  <br>
+                  osteochondroza
+                </h3>
+              </div>
+              <div class="comments-wrapper">
+                <p class="content">İlk başta sırt ağrısı sorunlarımı doktorların yardımıyla çözmeye çalıştım ama hiçbir şey yardımcı olmadı. Antiinflamatuar ilaçlar midemi ağrıttı. Daha sonra şifalı bitkilere ve dualara yöneldim. Ama bu bile faydasızdı. Sonra Nautubone balsamı ile karşılaştım. Tüm tedavi sürecini tamamladım. Bir hafta içinde ağrı neredeyse yok oldu! Birkaç gün sonra uzun mesafeler yürüyebildim ve normal şekilde çalışabildim. Teşekkür ederiz, ailemizi kurtardınız.
+                </p>
+              </div>
+              <div class="strars">
+                <img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"><img src="star.png" alt="rait"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination comments__pagination"></div>
+        </div>
+
+      </div>
+    </section><section class="attention"><span class="title">Not:</span> <span class="text"> İstenilen sonuca ulaşmak için gereken Nautubone paketi sayısı kişiye özel olarak belirlenir ve bazı durumlarda artabilir.
+      </span>.
+    </section><section class="last"><div class="last__container content-width">
+        <h2 class="last__title">Hareket kolaylığı geri gelsin!</h2>
+        <div class="last__items">
+          <div class="last__item">
+            <h3 class="last__item-title">Değişen şiddetteki eklem ve kas ağrılarına yardımcı olan topikal kullanım için doğal balsam:</h3>
+            <div class="items">
+              <div class="item">
+                <div class="ico"><img src="li1.png" alt="ico"></div>
+                <p class="text">Akut ağrının hızla giderilmesine yardımcı olur</p>
+              </div>
+              <div class="item">
+                <div class="ico"><img src="li2.png" alt="ico"></div>
+                <p class="text">Hasarlı eklemlerin hareketliliğini geri kazanmaya yardımcı olur</p>
+              </div>
+              <div class="item">
+                <div class="ico"><img src="li3.png" alt="ico"></div>
+                <p class="text">Hasar görmüş kas ve eklemlerin yenilenmesini destekler</p>
+              </div>
+              <div class="item">
+                <div class="ico"><img src="li4.png" alt="ico"></div>
+                <p class="text">Vücudun yenileyici özelliklerini harekete geçirmeye yardımcı olarak yaralanmalardan hızlı ve doğal iyileşmeyi destekler.</p>
+              </div>
+            </div>
+          </div>
+          <div class="last__item">
+            <div class="last__prod">
+              <img src="nautubonetr.png" alt="Nautubone" class="prod" style="max-width: 250px"><img src="prBg.png" alt="bg" class="bg"><img src="l1.png" alt="l1" class="l1"><img src="l2.png" alt="l2" class="l2"><img src="l3.png" alt="l3" class="l3"><img src="l4.png" alt="l4" class="l4"><img src="l5.png" alt="l5" class="l5"><img src="l6.png" alt="l6" class="l6"><img src="l7.png" alt="l7" class="l7"></div>
+          </div>
+          <div class="last__item">
+            <div class="last__form" id="order-form">
+              <form action="./post.php?h=LINK_PREVIEW&time=1781892746&event=thankyou-page-view" method="POST" class="form cream__form">
+
+                <div class="form__header">
+                  <p class="form__header-text">
+                    Şuradan satın al:
+                    <br>
+                    %50 indirim
+                    <br>
+                    %50 indirim*.
+                  </p>
+                </div>
+                <div class="form__content">
+                  <div class="price">
+                    <p class="price__old">
+                      <span class="price__old--description">Başlangıç ​​fiyatı:
+                      </span> <span class="price__old--value oldPriceAndLabelForLandingInfoApi">2800 </span>
+                    </p>
+                    <p class="price__new">
+                      <span class="price__new--description">İndirim sonrası fiyat:</span> <span class="price__new--value priceAndLabelForLandingInfoApi">1400TL</span>
+                    </p>
+                  </div>
+                  <input class="form__input" name="name" required="" placeholder="İsim" type="text" value=""><input class="form__input" name="phone" placeholder="" required="" type="tel" value=""><button type="submit" class="form__btn btn">sipariş ver</button>
+                  <p class="form__note">*kurs siparişi verirken</p>
+                </div>
+
+                <select style="display: none;" name="country_code"><option value="TR">Turkey</option></select></form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section></main><footer class="footer"><div class="logo">
+      <div class="logo__cercle">
+        <img src="logo.png" alt="logo"></div>
+      <div class="logo__right">
+        <h3 class="logo__title">Nautubone</h3>
+        <p class="logo__text">
+          İçindekiler <br>
+          %100 doğal </p>
+      </div>
+    </div>
+    <div class="polici"><a target="_blank">Nautubone Gizlilik Politikası | Mesaj</a> </div>
+
+  </footer><script src="moment-with-locales.min.js"></script><script src="marque.min.js"></script></body></html>
+ 
