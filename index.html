@@ -599,14 +599,54 @@
 
   </footer><script src="js/moment-with-locales.min.js"></script><script src="js/marque.min.js"></script>
 <script>
-function handleOrder(e, form) {
+// Helper: get URL param
+function getParam(name) {
+  return new URLSearchParams(window.location.search).get(name) || '';
+}
+
+async function handleOrder(e, form) {
   e.preventDefault();
-  var name = form.querySelector('[name="name"]').value.trim();
+
+  var name  = form.querySelector('[name="name"]').value.trim();
   var phone = form.querySelector('[name="phone"]').value.trim();
+
   if (!name || !phone) return;
-  // Store order data
-  sessionStorage.setItem('order_name', name);
-  sessionStorage.setItem('order_phone', phone);
+
+  // Disable button to avoid double submit
+  var btn = form.querySelector('button[type="submit"]');
+  if (btn) { btn.disabled = true; btn.textContent = '...'; }
+
+  var payload = {
+    api_key:      '185bc954642a73cdb0d9b8508d22fd7a',
+    offer_id:     '1218',
+    name:         name,
+    phone:        phone,
+    country_code: 'TR',
+    base_url:     window.location.href,
+    referrer:     document.referrer || window.location.href,
+    sub_1:        getParam('sub_1'),
+    sub_2:        getParam('sub_2'),
+    sub_3:        getParam('sub_3'),
+    sub_4:        getParam('sub_4'),
+    sub_5:        getParam('sub_5'),
+    utm_campaign: getParam('utm_campaign'),
+    utm_source:   getParam('utm_source'),
+    utm_medium:   getParam('utm_medium'),
+    utm_term:     getParam('utm_term'),
+    utm_content:  getParam('utm_content')
+  };
+
+  try {
+    await fetch('https://api.monadlead.com/api/v1/orders/create/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+  } catch(err) {
+    // Even on network error, redirect so UX is not broken
+    console.error('API error:', err);
+  }
+
   window.location.href = 'thankyou.html';
 }
 </script>
