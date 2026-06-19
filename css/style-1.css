@@ -1,4 +1,4 @@
-@import url("css2-1.css");
+﻿@import url("css2-1.css");
 *,
 *::after,
 *::before {
@@ -100,7 +100,7 @@ h3 {
   display: block;
   position: absolute;
   content: "";
-  background: url("point.png");
+  background: url("../img/point.png");
   width: 30px;
   height: 30px;
   top: 3px;
@@ -235,7 +235,7 @@ h3 {
   }
 }
 .recupera {
-  background: url("bgf.png") no-repeat;
+  background: url("../img/bgf.png") no-repeat;
   background-size: cover;
   background-position: bottom;
   overflow: hidden;
@@ -521,7 +521,7 @@ h3 {
   height: 119px;
   padding-top: 28px;
   color: white;
-  background-image: url("form-mark.svg");
+  background-image: url("../img/form-mark.svg");
   background-repeat: no-repeat;
   font-family: Kulim Park;
   font-size: 26px;
@@ -741,7 +741,7 @@ h3 {
   content: "*";
 }
 .balsamo {
-  background: url("bbg.png");
+  background: url("../img/bbg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -943,7 +943,7 @@ h3 {
   }
 }
 .problemas {
-  background: url("bbg.png");
+  background: url("../img/bbg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 102% 102%;
@@ -976,25 +976,25 @@ h3 {
   display: none;
 }
 .problemas__items-top .problemas__item:nth-child(1) .img {
-  background: url("p1.png");
+  background: url("../img/p1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .problemas__items-top .problemas__item:nth-child(2) .img {
-  background: url("p2.png");
+  background: url("../img/p2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .problemas__items-top .problemas__item:nth-child(3) .img {
-  background: url("p3.png");
+  background: url("../img/p3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .problemas__items-top .problemas__item:nth-child(4) .img {
-  background: url("p4.png");
+  background: url("../img/p4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1017,19 +1017,19 @@ h3 {
   display: none;
 }
 .problemas__items-bot .problemas__item:nth-child(1) .img {
-  background: url("p5.png");
+  background: url("../img/p5.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .problemas__items-bot .problemas__item:nth-child(2) .img {
-  background: url("p6.png");
+  background: url("../img/p6.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .problemas__items-bot .problemas__item:nth-child(3) .img {
-  background: url("p7.png");
+  background: url("../img/p7.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1356,7 +1356,7 @@ h3 {
   }
 }
 .maxiflex {
-  background: url("mfbg.png");
+  background: url("../img/mfbg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1686,7 +1686,7 @@ h3 {
   }
 }
 .activo {
-  background: url("abg.png");
+  background: url("../img/abg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1896,7 +1896,7 @@ h3 {
   }
 }
 .experto {
-  background: url("bbg.png");
+  background: url("../img/bbg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1919,7 +1919,7 @@ h3 {
   height: 100%;
   overflow: hidden;
   border-radius: 20px;
-  background: url("experd.jpg");
+  background: url("../img/experd.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2176,16 +2176,16 @@ h3 {
   right: 10px;
 }
 .comments__item:nth-child(odd)::before {
-  background: url("i1.png");
+  background: url("../img/i1.png");
 }
 .comments__item:nth-child(odd)::after {
-  background: url("i2.png");
+  background: url("../img/i2.png");
 }
 .comments__item:nth-child(even)::before {
-  background: url("o1.png");
+  background: url("../img/o1.png");
 }
 .comments__item:nth-child(even)::after {
-  background: url("o2.png");
+  background: url("../img/o2.png");
 }
 .comments .swiper {
   overflow: visible;
@@ -2361,7 +2361,7 @@ h3 {
 }
 
 .last {
-  background: url("lBg.png");
+  background: url("../img/lBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -2496,7 +2496,7 @@ h3 {
 
 @media screen and (max-width: 1000px) {
   .last {
-    background: url("bg1000.png");
+    background: url("../img/bg1000.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
@@ -2609,7 +2609,7 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .last {
-    background: url("bg768.png");
+    background: url("../img/bg768.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
@@ -2622,7 +2622,7 @@ h3 {
 }
 @media screen and (max-width: 480px) {
   .last {
-    background: url("bg480.png");
+    background: url("../img/bg480.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
@@ -2664,7 +2664,7 @@ h3 {
 }
 @media screen and (max-width: 400px) {
   .last {
-    background: url("bg480.png");
+    background: url("../img/bg480.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
@@ -2730,3 +2730,4 @@ h3 {
     padding: 40px 20px;
   }
 }
+

@@ -1,4 +1,4 @@
-body.noscroll{ margin:0; height:100%; overflow:hidden; }
+﻿body.noscroll{ margin:0; height:100%; overflow:hidden; }
 body {
 		background:#fff;
 }
@@ -56,7 +56,7 @@ html.is-locked, html.is-locked body {
 }
 
 #play h4:first-child{ margin-bottom:60px; }
-#play>div{ background:no-repeat center/60px url("c609af3d02e527350c2808520d7bfe6401c5340b.svg"); }
+#play>div{ background:no-repeat center/60px url("../img/c609af3d02e527350c2808520d7bfe6401c5340b.svg"); }
 #popup>div, #play>div{ position:relative; background-color:rgba(0,207,47,0.75); padding:5px 20px; margin:0 auto; width:30%; color:#fff; border:2px solid #fff; border-radius:8px; cursor:pointer; }
 #popup>div{ width:40%; background-color:rgba(255,0,0,0.75);}
 @media (max-width:600px){
@@ -83,7 +83,7 @@ html.is-locked, html.is-locked body {
     height: 30px;
     cursor: pointer;
     z-index: 2;
-    background-image: url("close.svg");
+    background-image: url("../img/close.svg");
     background-size: cover;
 }
 .main_header {
@@ -331,3 +331,4 @@ html.is-locked, html.is-locked body {
  img + blockquote {
     margin-top: .5rem;
  }
+
