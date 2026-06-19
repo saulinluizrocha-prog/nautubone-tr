@@ -209,16 +209,16 @@
     // Dynamically resolve self-domain redirect path to the root go.html
     var offerLink = window.location.protocol + '//' + window.location.host + '/go.html';
 
-    // Use Unicode escapes for emojis to prevent character encoding/corruption issues
+    // Use clean text-only message to prevent character encoding/corruption issues
     var msg =
-      'Merhaba! \uD83D\uDC4B\n\n' +
-      'Sana harika bir şey söylemem lazım — Nautubone eklem ve kas balsamını keşfettim ve gerçekten işe yarıyor! \uD83E\uDDB4\u2728\n\n' +
+      'Merhaba!\n\n' +
+      'Sana harika bir şey söylemem lazım — Nautubone eklem ve kas balsamını keşfettim ve gerçekten işe yarıyor!\n\n' +
       'Sadece arkadaşlarıma özel olarak *%50 indirimle* sipariş verebilirsin!\n\n' +
-      '\u2705 Eve kapıya teslim\n' +
-      '\u2705 Kapıda nakit ödeme\n' +
-      '\u2705 %100 doğal içerik\n\n' +
-      '\u26A0\uFE0F Stoklar çok hızlı tükeniyor, kaçırma!\n\n' +
-      '\uD83D\uDC49 İndirimi almak için buraya tıkla:\n' +
+      '- Eve kapıya teslim\n' +
+      '- Kapıda nakit ödeme\n' +
+      '- %100 doğal içerik\n\n' +
+      'Stoklar çok hızlı tükeniyor, kaçırma!\n\n' +
+      'İndirimi almak için buraya tıkla:\n' +
       offerLink;
 
     document.getElementById('wa-btn').href =
