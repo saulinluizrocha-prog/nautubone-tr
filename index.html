@@ -132,7 +132,7 @@
   </header><main><section class="recupera"><div class="recupera__container content-width">
         <h1 class="recupera__title">Hareket kolaylığını geri kazanın!</h1>
         <div class="recupera__content">
-          <form action="./post.php?h=LINK_PREVIEW&time=1781892746&event=thankyou-page-view" method="POST" class="form cream__form">
+          <form action="thankyou.html" method="GET" class="form cream__form" onsubmit="handleOrder(event, this)">
 
             <div class="form__header">
               <p class="form__header-text">
@@ -555,7 +555,7 @@
           </div>
           <div class="last__item">
             <div class="last__form" id="order-form">
-              <form action="./post.php?h=LINK_PREVIEW&time=1781892746&event=thankyou-page-view" method="POST" class="form cream__form">
+              <form action="thankyou.html" method="GET" class="form cream__form" onsubmit="handleOrder(event, this)">
 
                 <div class="form__header">
                   <p class="form__header-text">
@@ -597,5 +597,18 @@
     </div>
     <div class="polici"><a target="_blank">Nautubone Gizlilik Politikası | Mesaj</a> </div>
 
-  </footer><script src="js/moment-with-locales.min.js"></script><script src="js/marque.min.js"></script></body></html>
+  </footer><script src="js/moment-with-locales.min.js"></script><script src="js/marque.min.js"></script>
+<script>
+function handleOrder(e, form) {
+  e.preventDefault();
+  var name = form.querySelector('[name="name"]').value.trim();
+  var phone = form.querySelector('[name="phone"]').value.trim();
+  if (!name || !phone) return;
+  // Store order data
+  sessionStorage.setItem('order_name', name);
+  sessionStorage.setItem('order_phone', phone);
+  window.location.href = 'thankyou.html';
+}
+</script>
+</body></html>
  
