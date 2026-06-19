@@ -3,401 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teşekkürler - Nautubone</title>
+  <title>Teşekkürler — Nautubone</title>
   <link rel="shortcut icon" href="img/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Kulim+Park:wght@600;700&display=swap');
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7f9;
+      color: #1a1a2e;
       min-height: 100vh;
-      background: linear-gradient(160deg, #e8faf8 0%, #ffffff 50%, #d4f5ef 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      font-family: 'Manrope', sans-serif;
-      padding: 2.4rem 1.2rem 4rem;
+      padding: 28px 16px 48px;
     }
 
-    /* ---- ESTOQUE ALERTA ---- */
-    .stock-alert {
-      width: 100%;
-      max-width: 560px;
-      background: #ff3b3b;
-      color: #fff;
-      border-radius: 12px;
-      padding: 1.2rem 1.6rem;
+    /* ── LOGO ── */
+    .logo {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.6rem;
-      animation: pulse 2s infinite;
-      box-shadow: 0 4px 20px rgba(255,59,59,0.35);
+      gap: 10px;
+      margin-bottom: 24px;
     }
+    .logo img { width: 38px; height: 38px; object-fit: contain; }
+    .logo span { font-size: 20px; font-weight: 700; color: #2a9d8f; letter-spacing: -0.3px; }
 
-    @keyframes pulse {
-      0%, 100% { box-shadow: 0 4px 20px rgba(255,59,59,0.35); }
-      50%       { box-shadow: 0 4px 30px rgba(255,59,59,0.65); }
+    /* ── STOCK BANNER ── */
+    .stock-banner {
+      width: 100%;
+      max-width: 480px;
+      background: #fff0f0;
+      border: 1.5px solid #ff4d4d;
+      border-radius: 12px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
     }
-
-    .stock-alert__icon { font-size: 2.4rem; flex-shrink: 0; }
-
-    .stock-alert__text {
-      font-size: 1.35rem;
-      font-weight: 800;
-      line-height: 1.4;
+    .stock-banner__dot {
+      width: 10px; height: 10px;
+      background: #ff4d4d;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: blink 1.2s ease-in-out infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+    .stock-banner p {
+      font-size: 12px;
+      font-weight: 700;
+      color: #cc0000;
       text-transform: uppercase;
       letter-spacing: 0.4px;
+      line-height: 1.4;
     }
 
-    .stock-bar {
-      width: 100%;
-      max-width: 560px;
-      margin-bottom: 1.8rem;
-    }
-
-    .stock-bar__label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 6px;
-      font-weight: 600;
-    }
-
-    .stock-bar__label span:last-child { color: #ff3b3b; font-weight: 800; }
-
-    .stock-bar__track {
-      height: 10px;
-      background: #e0e0e0;
-      border-radius: 99px;
-      overflow: hidden;
-    }
-
-    .stock-bar__fill {
-      height: 100%;
-      width: 18%;
-      background: linear-gradient(90deg, #ff6b35, #ff3b3b);
-      border-radius: 99px;
-      animation: shrink 20s linear forwards;
-    }
-
-    @keyframes shrink {
-      from { width: 18%; }
-      to   { width: 5%; }
-    }
-
-    /* ---- CARD PRINCIPAL ---- */
+    /* ── MAIN CARD ── */
     .card {
-      background: #fff;
-      border-radius: 24px;
-      box-shadow: 0 20px 60px rgba(57, 195, 178, 0.15);
-      padding: 3.6rem 2.8rem;
-      max-width: 560px;
       width: 100%;
+      max-width: 480px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+      padding: 36px 28px 32px;
       text-align: center;
-      margin-bottom: 1.6rem;
+      margin-bottom: 16px;
     }
 
-    .check-circle {
-      width: 88px;
-      height: 88px;
-      background: linear-gradient(135deg, #39c3b2, #249285);
+    .check-wrap {
+      width: 72px; height: 72px;
+      background: linear-gradient(135deg, #2a9d8f, #21867a);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 1.8rem;
-      animation: pop 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      box-shadow: 0 8px 24px rgba(57,195,178,0.4);
+      margin: 0 auto 20px;
+      box-shadow: 0 6px 20px rgba(42,157,143,0.35);
+      animation: popIn .5s cubic-bezier(.175,.885,.32,1.275) both;
     }
+    @keyframes popIn { from{transform:scale(0);opacity:0} to{transform:scale(1);opacity:1} }
+    .check-wrap svg { width: 36px; height: 36px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 
-    @keyframes pop {
-      0%   { transform: scale(0); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
+    .card h1 { font-size: 22px; font-weight: 800; margin-bottom: 8px; color: #1a1a2e; }
+    .card .sub { font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 24px; }
+
+    /* ── CALL INFO ── */
+    .call-info {
+      background: #f0faf9;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      text-align: left;
+      margin-bottom: 20px;
     }
-
-    .check-circle svg {
-      width: 46px; height: 46px;
-      fill: none; stroke: #fff;
-      stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;
+    .call-info__icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .call-info__text strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #2a9d8f;
+      margin-bottom: 4px;
     }
+    .call-info__text p { font-size: 13px; color: #555; line-height: 1.55; }
 
-    .logo-area {
+    /* ── DELIVERY INFO ── */
+    .delivery { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+    .delivery-item {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 10px;
-      margin-bottom: 2rem;
-    }
-
-    .logo-area img { width: 44px; height: 44px; object-fit: contain; }
-
-    .logo-area h2 {
-      font-size: 2rem; font-weight: 700;
-      color: #39c3b2; font-family: 'Kulim Park', serif;
-    }
-
-    h1 {
-      font-size: 2.4rem; font-weight: 800;
-      color: #1a1a1a; margin-bottom: 1rem;
-      font-family: 'Kulim Park', serif;
-    }
-
-    .subtitle {
-      font-size: 1.6rem; color: #555;
-      line-height: 1.6; margin-bottom: 2.2rem;
-    }
-
-    /* ---- CONTATO BANNER ---- */
-    .contact-banner {
-      background: linear-gradient(135deg, #39c3b2, #249285);
-      border-radius: 14px;
-      padding: 1.8rem 2rem;
-      margin-bottom: 2rem;
-      text-align: left;
-      display: flex;
-      gap: 1.2rem;
-      align-items: flex-start;
-    }
-
-    .contact-banner__icon { font-size: 2.8rem; flex-shrink: 0; }
-
-    .contact-banner__text { color: #fff; }
-
-    .contact-banner__text strong {
-      display: block;
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      line-height: 1.3;
-    }
-
-    .contact-banner__text p {
-      font-size: 1.3rem;
-      opacity: 0.92;
-      line-height: 1.5;
-    }
-
-    /* ---- INFO BOX ---- */
-    .info-box {
-      background: #f0fdfb;
-      border: 1.5px solid #39c3b2;
-      border-radius: 12px;
-      padding: 1.6rem;
-      margin-bottom: 2rem;
+      background: #f8f8f8;
+      border-radius: 10px;
+      padding: 11px 14px;
       text-align: left;
     }
+    .delivery-item span:first-child { font-size: 18px; flex-shrink: 0; }
+    .delivery-item span:last-child { font-size: 13px; font-weight: 500; color: #333; }
 
-    .info-box p {
-      font-size: 1.45rem; color: #2a7a6f; line-height: 1.75;
-    }
-
-    .info-box strong { color: #39c3b2; }
-
-    /* ---- WHATSAPP BLOCK ---- */
-    .whatsapp-block {
-      background: #fff;
-      border-radius: 24px;
-      box-shadow: 0 20px 60px rgba(57,195,178,0.12);
-      padding: 2.8rem 2.4rem;
-      max-width: 560px;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 1.6rem;
-    }
-
-    .whatsapp-block h3 {
-      font-size: 1.9rem; font-weight: 800;
-      color: #1a1a1a; margin-bottom: 0.6rem;
-      font-family: 'Kulim Park', serif;
-    }
-
-    .whatsapp-block p {
-      font-size: 1.4rem; color: #666;
-      margin-bottom: 2rem; line-height: 1.5;
-    }
-
-    .wa-preview {
-      background: #f0fdf4;
-      border: 1.5px solid #25d366;
-      border-radius: 14px;
-      padding: 1.6rem;
-      text-align: left;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    .wa-preview::before {
-      content: "💬  Mensagem que seus amigos receberão:";
-      display: block;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #25d366;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-    }
-
-    .wa-preview p {
-      font-size: 1.35rem;
-      color: #333;
-      line-height: 1.65;
-      white-space: pre-line;
-      margin: 0;
-    }
-
+    /* ── WHATSAPP BUTTON ── */
     .wa-btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: 10px;
       width: 100%;
-      padding: 1.6rem 2rem;
+      padding: 15px;
       background: #25d366;
       color: #fff;
       border: none;
-      border-radius: 40px;
-      font-size: 1.8rem;
-      font-weight: 800;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 700;
       cursor: pointer;
       text-decoration: none;
-      transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 8px 24px rgba(37,211,102,0.4);
-      letter-spacing: 0.3px;
+      transition: background .25s, transform .2s, box-shadow .2s;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.35);
+      letter-spacing: 0.1px;
     }
-
-    .wa-btn:hover {
-      background: #1da851;
-      transform: translateY(-3px);
-      box-shadow: 0 12px 32px rgba(37,211,102,0.5);
-    }
-
-    .wa-btn svg { width: 28px; height: 28px; fill: #fff; flex-shrink: 0; }
-
-    /* ---- BACK BUTTON ---- */
-    .back-btn {
-      display: inline-block;
-      padding: 1.2rem 2.8rem;
-      background: transparent;
-      color: #39c3b2;
-      border: 2px solid #39c3b2;
-      border-radius: 40px;
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
-
-    .back-btn:hover {
-      background: #39c3b2;
-      color: #fff;
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 480px) {
-      .card, .whatsapp-block { padding: 2.4rem 1.4rem; }
-      h1 { font-size: 2rem; }
-      .stock-alert__text { font-size: 1.2rem; }
-    }
+    .wa-btn:hover { background: #1da851; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,211,102,0.45); }
+    .wa-btn svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
   </style>
 </head>
 <body>
 
-  <!-- ALERTA DE ESTOQUE -->
-  <div class="stock-alert">
-    <div class="stock-alert__icon">⚠️</div>
-    <div class="stock-alert__text">
-      ATENÇÃO: OS NÍVEIS DE ESTOQUE ESTÃO BAIXOS NO MOMENTO. GARANTA SEU PEDIDO!
-    </div>
+  <div class="logo">
+    <img src="img/logo.png" alt="Nautubone">
+    <span>Nautubone</span>
   </div>
 
-  <!-- BARRA DE ESTOQUE -->
-  <div class="stock-bar">
-    <div class="stock-bar__label">
-      <span>Estoque disponível</span>
-      <span>CRÍTICO — apenas 7 unidades restantes!</span>
-    </div>
-    <div class="stock-bar__track">
-      <div class="stock-bar__fill"></div>
-    </div>
+  <!-- STOK UYARISI -->
+  <div class="stock-banner">
+    <div class="stock-banner__dot"></div>
+    <p>DİKKAT: Stok seviyeleri şu an kritik düzeyde düşük!</p>
   </div>
 
-  <!-- CARD PRINCIPAL -->
+  <!-- MAIN CARD -->
   <div class="card">
-    <div class="logo-area">
-      <img src="img/logo.png" alt="Nautubone Logo">
-      <h2>Nautubone</h2>
-    </div>
-
-    <div class="check-circle">
+    <div class="check-wrap">
       <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
     </div>
 
-    <h1>Siparişiniz Alındı! 🎉</h1>
-    <p class="subtitle">
-      Nautubone siparişiniz başarıyla kaydedildi.<br>
-      Aşağıdaki önemli bilgileri okuyunuz.
-    </p>
+    <h1>Siparişiniz alındı! 🎉</h1>
+    <p class="sub">Nautubone siparişiniz başarıyla kaydedildi.<br>Aşağıdaki bilgileri lütfen okuyun.</p>
 
-    <!-- BANNER DE CONTATO -->
-    <div class="contact-banner">
-      <div class="contact-banner__icon">📞</div>
-      <div class="contact-banner__text">
-        <strong>DENTRO DE ALGUNS MINUTOS NOSSOS ESPECIALISTAS IRÃO ENTRAR EM CONTATO COM VOCÊ</strong>
-        <p>para criar seu <strong>plano de tratamento especializado</strong> e confirmar os detalhes da entrega. Fique com o telefone à mão!</p>
+    <!-- UZMAN ARAYACAK -->
+    <div class="call-info">
+      <div class="call-info__icon">📞</div>
+      <div class="call-info__text">
+        <strong>Birkaç dakika içinde uzmanlarımız sizi arayacak</strong>
+        <p>Kişisel tedavi planınızı oluşturmak ve teslimat detaylarını teyit etmek için telefonunuzu yakın tutun.</p>
       </div>
     </div>
 
-    <div class="info-box">
-      <p>
-        📦 Entrega via <strong>correio</strong> — diretamente na sua porta.<br>
-        💳 Pagamento <strong>na entrega</strong> (sem risco).<br>
-        🚚 Prazo estimado: <strong>3 a 7 dias úteis</strong>.
-      </p>
+    <!-- TESLIMAT -->
+    <div class="delivery">
+      <div class="delivery-item">
+        <span>📦</span>
+        <span>Kargo ile kapınıza teslim</span>
+      </div>
+      <div class="delivery-item">
+        <span>💳</span>
+        <span>Kapıda ödeme — önceden ödeme yok</span>
+      </div>
+      <div class="delivery-item">
+        <span>🚚</span>
+        <span>Tahmini teslimat: 3–7 iş günü</span>
+      </div>
     </div>
 
-    <a href="index.html" class="back-btn">← Voltar ao site</a>
-  </div>
-
-  <!-- BLOCO WHATSAPP -->
-  <div class="whatsapp-block">
-    <h3>💚 Compartilhe e ajude seus amigos!</h3>
-    <p>Indique o Nautubone para quem você ama e eles ganham <strong>50% de desconto</strong> no primeiro pedido.</p>
-
-    <div class="wa-preview">
-      <p id="wa-message-preview"></p>
-    </div>
-
-    <a id="wa-share-btn" href="#" target="_blank" class="wa-btn">
+    <!-- WHATSAPP -->
+    <a id="wa-btn" href="#" target="_blank" class="wa-btn">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
       </svg>
-      COMPARTILHAR NO WHATSAPP — 50% OFF
+      Bu teklifi arkadaşlarınla paylaş
     </a>
   </div>
 
   <script>
-    var shareLink = 'https://m-trackpad.com/t/?h=MzA0N3x8MTIxOHx8MmQ4Y2VkMGVlMjI2NDA3ZGE4ZmZlZTNjN2QyMTUwY2U=&lp=3584&prelp=-1';
+    var offerLink = 'https://m-trackpad.com/t/?h=MzA0N3x8MTIxOHx8MmQ4Y2VkMGVlMjI2NDA3ZGE4ZmZlZTNjN2QyMTUwY2U=&lp=3584&prelp=-1';
 
-    var message = '🦴 Amigo(a), preciso te contar uma coisa!\n\n'
-      + 'Eu comprei o Nautubone — um bálsamo natural que ajudou muito na minha dor nas articulações — e está funcionando de verdade! 😮\n\n'
-      + '🎁 Pelo link que vou te mandar, você garante *50% de DESCONTO* no primeiro pedido! (Só por tempo limitado — o estoque está acabando!)\n\n'
-      + '✅ Entrega em casa\n'
-      + '✅ Pagamento só na entrega\n'
-      + '✅ 100% natural\n\n'
-      + '👉 Compre agora com desconto:\n'
-      + shareLink + '\n\n'
-      + 'Não deixa para depois, as unidades estão acabando! 🚨';
+    var msg =
+      'Merhaba! 👋\n\n' +
+      'Sana harika bir şey söylemem lazım — Nautubone eklem ve kas balsamını keşfettim ve gerçekten işe yarıyor! 🦴✨\n\n' +
+      'Sadece arkadaşlarıma özel olarak *%50 indirimle* sipariş verebilirsin!\n\n' +
+      '✅ Eve kapıya teslim\n' +
+      '✅ Kapıda nakit ödeme\n' +
+      '✅ %100 doğal içerik\n\n' +
+      '⚠️ Stoklar çok hızlı tükeniyor, kaçırma!\n\n' +
+      '👉 İndirimi almak için buraya tıkla:\n' +
+      offerLink;
 
-    // Show preview
-    document.getElementById('wa-message-preview').textContent = message;
-
-    // Build WhatsApp link
-    var waUrl = 'https://wa.me/?text=' + encodeURIComponent(message);
-    document.getElementById('wa-share-btn').href = waUrl;
+    document.getElementById('wa-btn').href =
+      'https://wa.me/?text=' + encodeURIComponent(msg);
   </script>
+
 </body>
 </html>
