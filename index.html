@@ -226,6 +226,17 @@
 </script>
 
   <script defer src="https://cdn.raadsgate.com/code/1139-02bb9cba-8329-4cf8-bbae-4eacdae994d3"></script>
+
+  <!-- Correção do badge de desconto: o valor -75% vem de css/style.css (arquivo externo
+       que não recebi o conteúdo). Este override força o texto certo independente do
+       que estiver lá. Se atualizar o css/style.css com -50% diretamente, pode remover este bloco. -->
+  <style>
+    .form::before,
+    .last__form .form::before,
+    .discount-badge::before {
+      content: "-50%" !important;
+    }
+  </style>
 </head><body>
 <header class="header"><div class="header__container content-width">
     <div class="logo">
@@ -286,7 +297,7 @@
       </div>
     </div>
   </section><section class="balsamo"><div class="balsamo__container content-width">
-      <h2 class="balsamo__title section__title">Um bálsamo tópico natural pensado para a rotina de quem sente as pernas e as costas no fim do dia:</h2>
+      <h2 class="balsamo__title section__title">Günün sonunda bacaklarında ve sırtında yorgunluk hisseden herkesin rutinine uygun, doğal içerikli topikal bir balsam:</h2>
       <div class="balsamo__items">
         <div class="balsamo__item">
           <div class="img"><img src="img/b1.png"></div>
@@ -534,7 +545,7 @@
               <h3 class="title">Hasan Ö. - 57 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Balsamı düzenli kullanmaya başladım, kokusu hafif ve yağlı bir his bırakmıyor. Günlük rutinime kolayca eklendi.</p>
+              <p class="content">Açıkçası ilk başta çok umutlu değildim, daha önce birkaç ürün denemiştim ve hepsi birbirine benziyordu. Nautubone'u denemeye karar verdiğimde beni ikna eden şey doğal içerik listesiydi ve kapıda ödeme olması riski azalttı. Balsamı yaklaşık üç haftadır düzenli kullanıyorum, kokusu hafif, cilt üzerinde yağlı bir his bırakmıyor ve günlük rutinime gerçekten kolayca oturdu. Kargo da beklediğimden hızlı geldi, kutuyu özenli paketlenmiş buldum. Bu fiyata bu kaliteyi bulmak zordu, memnun kaldım.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -545,7 +556,7 @@
               <h3 class="title">Zeynep K. - 43 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Doğal içeriği olması benim için önemliydi. Kapıda ödeme seçeneği de karar vermemi kolaylaştırdı, ürünü görmeden ödeme yapmadım.</p>
+              <p class="content">Kozmetik ürünlerde hassas bir cildim olduğu için içerik listesine çok dikkat ederim, bu yüzden sipariş vermeden önce sayfadaki bileşen açıklamalarını uzun uzun okudum. Doğal içeriği olması benim için belirleyici oldu. Kapıda ödeme seçeneği de kararımı kolaylaştırdı, çünkü daha önce internetten aldığım bir ürün hiç gelmemişti ve bu sefer risk almak istemedim. Ürün elime ulaştığında paketleme gayet düzenliydi, kokusu da beklediğimden hafifti. Şu an düzenli olarak akşam rutinime dahil ediyorum ve tekrar sipariş vermeyi düşünüyorum.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -556,7 +567,7 @@
               <h3 class="title">Merve S. - 38 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Antrenman sonrası düzenli kullanmaya başladım. Hafif dokusu ve kolay uygulaması hoşuma gitti. Tavsiye ederim.</p>
+              <p class="content">Haftada dört gün spor salonuna gidiyorum ve antrenman sonrası bir şeyler uygulamak benim için artık rutinin bir parçası. Nautubone'u bir arkadaşımın önerisiyle denedim, ilk uyguladığımda dokusunun ne kadar hafif olduğuna şaşırdım — yapış yapış bir his bırakmıyor, hemen üstüme kıyafet giyebiliyorum. Kutuda kullanım talimatı da net yazılıydı, karışıklık yaşamadım. Sipariş sürecinde form doldurduktan sonra kısa sürede aranıp teyit aldım, kargo da hızlı geldi. Fiyatı da bu tür ürünlere göre makul, tavsiye ederim.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -567,7 +578,7 @@
               <h3 class="title">Elif T. - 53 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Ürünün kokusu hafif ve yağlı bir his bırakmıyor, bu da kullanımı kolaylaştırıyor. Günlük rutinime eklemesi kolay oldu.</p>
+              <p class="content">Yaşım ilerledikçe ürün seçerken daha dikkatli oluyorum, bu yüzden sipariş vermeden önce sayfadaki sık sorulan soruları baştan sona okudum. Ürünün kokusu hafif, cildimde yağlı bir his bırakmıyor, bu da kullanımı benim için kolaylaştıran bir detay oldu. Günlük rutinime eklemesi kolay oldu, özellikle akşamları televizyon izlerken uyguluyorum. Telefonla aranıp sipariş teyidi alınması da içimi rahatlattı, ciddi bir işleyiş olduğunu düşündüm. Kargo takip numarasını da aynı gün elime ulaştılar.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -578,7 +589,7 @@
               <h3 class="title">Mustafa Ç. - 48 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Birkaç farklı ürün denedim, Nautubone'u düzenli kullanmaya devam ediyorum. Kargo hızlı geldi, ödemeyi kapıda yaptım.</p>
+              <p class="content">Bu tarz ürünlere karşı biraz şüpheciyimdir, çünkü daha önce internetten aldığım birkaç şeyde beklentim boşa çıkmıştı. Nautubone'a karar vermeden önce ürünün içeriğini ve kapıda ödeme şartlarını sayfada dikkatlice inceledim. Sipariş verdikten sonra ekip kısa sürede aradı, teslimat tarihini net söylediler ve söz verdikleri gün elime ulaştı. Ödemeyi kurye elimde teslim ettiğinde yaptım, hiçbir sürpriz ücret çıkmadı. Ürünü düzenli kullanmaya devam ediyorum, paketleme ve teslimat süreci beni memnun etti.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -589,7 +600,7 @@
               <h3 class="title">Ayşe A. - 51 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Düzenli kullanmaya başladıktan sonra günlük rutinime dahil ettim. Teşekkürler.</p>
+              <p class="content">Kızım bana bu sayfayı gönderdiğinde ilk tepkim "bir tane daha mı" oldu, çünkü bu tür ürünlerden epey denemişliğim var. Yine de doğal içerik listesi ve kapıda ödeme seçeneği beni ikna etti, en azından ürünü elime almadan para vermiyordum. Kutuyu açtığımda ambalaj gayet özenliydi, kullanım talimatı da anlaşılır bir dilde yazılmıştı. Düzenli kullanmaya başladıktan sonra akşam rutinime rahatça dahil ettim, günlük bir alışkanlık haline geldi. Teşekkürler, memnun kaldım.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -600,7 +611,7 @@
               <h3 class="title">Burak Y. - 45 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Masa başı işim yüzünden günlük yorgunluk hissediyordum. Balsamı işten sonra uyguluyorum, rutinime iyi oturdu. Sipariş ve teslimat süreci de pratikti.</p>
+              <p class="content">Günün büyük bölümünü bilgisayar başında geçiriyorum ve akşamları kendime vakit ayırmak biraz zor oluyor, bu yüzden pratik bir rutin arıyordum. Balsamı işten sonra, duştan hemen sonra uyguluyorum, uygulaması bir dakikamı bile almıyor. Sipariş verirken formu doldurdum, kısa süre içinde arayıp bilgileri teyit ettiler, ertesi gün kargoya verildiğini gördüm. Teslimat süreci gerçekten pratikti, beklediğimden daha sorunsuz geçti. Ürünü rutinime dahil etmeye devam ediyorum.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -611,7 +622,7 @@
               <h3 class="title">Fatma D. - 60 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Ailem önerdiği için denedim ve doğal içeriği beni rahatlattı. Kapıda ödeme olması da güven verdi, ürünü görmeden ödeme yapmadım.</p>
+              <p class="content">Bu yaşta yeni bir ürün denemeye pek sıcak bakmam, genelde bildiğim şeylerle devam ederim. Ama ailem önerdiği için bir şans vermeye karar verdim ve doğal içerik listesi beni rahatlattı, içindekileri kızıma da okuttum. Kapıda ödeme olması da güven verdi, ürünü görmeden hiçbir ödeme yapmadım. Kargo geldiğinde kutunun düzgün paketlenmiş olduğunu gördüm, kullanım talimatı da büyük ve okunaklı yazılmıştı. Şu an düzenli kullanıyorum ve akşam rutinimin bir parçası oldu.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -622,7 +633,7 @@
               <h3 class="title">Emre K. - 39 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Balsamı maçlardan sonra kullanıyorum, uygulaması kolay ve hızlı emiliyor. Kargo takip numarası da elime geçti, her şey şeffaf ilerledi.</p>
+              <p class="content">Hafta sonları amatör bir takımda maç yapıyorum ve maç sonrası bir rutinim olmasını istiyordum. Balsamı maçlardan sonra duştan çıktığımda uyguluyorum, dokusu hafif ve hızlı emildiği için üstüme kıyafet giymekte sorun yaşamıyorum. Sipariş verirken telefon numaramı bıraktım, kısa sürede aranıp bilgileri teyit ettiler. Kargo takip numarası da elime geçti, süreç boyunca her şey şeffaf ilerledi, sürpriz ücret ya da gecikme yaşamadım. Fiyatına göre tatmin edici bir deneyimdi.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -633,7 +644,7 @@
               <h3 class="title">Selin A. - 34 yaşında</h3>
             </div>
             <div class="comments-wrapper">
-              <p class="content">Uzun saatler ayakta çalışıyorum, akşam rutinime ekledim. Fiyatı da uygun olunca denemeye değer buldum.</p>
+              <p class="content">Bir mağazada çalışıyorum ve vardiya boyunca neredeyse hiç oturmuyorum, akşamları kendime birkaç dakika ayırmak istiyordum. Fiyatı uygun olunca denemeye değer buldum ve indirim kampanyasını kaçırmak istemedim. Ürün geldiğinde kutunun içinde kullanım önerileri de vardı, bu da işimi kolaylaştırdı. Akşam rutinime ekledim, kokusu ağır değil, bu yüzden yatmadan önce uygulamak sorun olmuyor. Kapıda ödeme yapabilmek de kararımı kolaylaştıran bir detaydı.</p>
             </div>
             <div class="strars"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"><img src="img/star.png" alt="rait"></div>
           </div>
@@ -646,32 +657,69 @@
     </span>.
   </section>
 
+  <style>
+    .faq__accordion { max-width: 800px; margin: 0 auto; }
+    .faq__accordion details {
+      border-bottom: 1px solid #eee;
+      padding: 14px 4px;
+    }
+    .faq__accordion summary {
+      list-style: none;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #222;
+    }
+    .faq__accordion summary::-webkit-details-marker { display: none; }
+    .faq__accordion summary::after {
+      content: "+";
+      font-size: 22px;
+      font-weight: 400;
+      color: #2aa89a;
+      margin-left: 12px;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq__accordion details[open] summary::after {
+      content: "−";
+    }
+    .faq__accordion p {
+      margin-top: 10px;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
   <section class="faq" style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
     <h2 class="section__title" style="text-align:center; margin-bottom: 24px;">Sık Sorulan Sorular</h2>
 
-    <div class="faq__item" style="margin-bottom:16px; border-bottom:1px solid #eee; padding-bottom:16px;">
-      <h3 style="font-size:18px; margin-bottom:8px;">Nautubone'u nasıl sipariş veririm?</h3>
-      <p>Sayfadaki formu doldurup isim ve telefon bilginizi bırakmanız yeterlidir. Ekibimiz siparişinizi onaylamak için sizi arayacaktır.</p>
-    </div>
+    <div class="faq__accordion">
+      <details>
+        <summary>Nautubone'u nasıl sipariş veririm?</summary>
+        <p>Sayfadaki formu doldurup isim ve telefon bilginizi bırakmanız yeterlidir. Ekibimiz siparişinizi onaylamak için sizi arayacaktır.</p>
+      </details>
 
-    <div class="faq__item" style="margin-bottom:16px; border-bottom:1px solid #eee; padding-bottom:16px;">
-      <h3 style="font-size:18px; margin-bottom:8px;">Ödemeyi ne zaman yapıyorum?</h3>
-      <p>Ödeme kapıda yapılır. Ürünü kurye elinizde teslim ettiğinde ödemenizi yaparsınız, önceden herhangi bir ödeme talep edilmez.</p>
-    </div>
+      <details>
+        <summary>Ödemeyi ne zaman yapıyorum?</summary>
+        <p>Ödeme kapıda yapılır. Ürünü kurye elinizde teslim ettiğinde ödemenizi yaparsınız, önceden herhangi bir ödeme talep edilmez.</p>
+      </details>
 
-    <div class="faq__item" style="margin-bottom:16px; border-bottom:1px solid #eee; padding-bottom:16px;">
-      <h3 style="font-size:18px; margin-bottom:8px;">Teslimat Türkiye'nin her yerine yapılıyor mu?</h3>
-      <p>Evet, Türkiye'nin tüm illerine kargo ile teslimat yapılır ve siparişiniz kargo takip numarası ile birlikte gönderilir.</p>
-    </div>
+      <details>
+        <summary>Teslimat Türkiye'nin her yerine yapılıyor mu?</summary>
+        <p>Evet, Türkiye'nin tüm illerine kargo ile teslimat yapılır ve siparişiniz kargo takip numarası ile birlikte gönderilir.</p>
+      </details>
 
-    <div class="faq__item" style="margin-bottom:16px; border-bottom:1px solid #eee; padding-bottom:16px;">
-      <h3 style="font-size:18px; margin-bottom:8px;">Nautubone'un içeriği doğal mı?</h3>
-      <p>Evet, ürün bitkisel ve doğal bileşenlerden oluşan topikal bir balsamdır.</p>
-    </div>
+      <details>
+        <summary>Nautubone'un içeriği doğal mı?</summary>
+        <p>Evet, ürün bitkisel ve doğal bileşenlerden oluşan topikal bir balsamdır.</p>
+      </details>
 
-    <div class="faq__item" style="margin-bottom:16px; padding-bottom:16px;">
-      <h3 style="font-size:18px; margin-bottom:8px;">Bu sayfa Nautubone'un resmi satış kanalı mı?</h3>
-      <p>Hayır. Bu bağımsız bir tanıtım sayfasıdır. Nautubone'un üreticisi veya resmi temsilcisi değiliz; bu sayfa üzerinden yapılan satışlardan komisyon kazanabiliriz.</p>
+      <details>
+        <summary>Bu sayfa Nautubone'un resmi satış kanalı mı?</summary>
+        <p>Hayır. Bu bağımsız bir tanıtım sayfasıdır. Nautubone'un üreticisi veya resmi temsilcisi değiliz; bu sayfa üzerinden yapılan satışlardan komisyon kazanabiliriz.</p>
+      </details>
     </div>
   </section>
 
